@@ -38,6 +38,90 @@ html {
 	margin: 80px 30px;
 }
 
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+#home-page .flex {
+	align-items: center;
+}
+
+#home-page .text .up {
+	font-family: var(--font-pattern1);
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--color-pattern2);
+}
+
+#home-page .text .middle {
+	font-family: var(--font-pattern2);
+	font-size: 5rem;
+	font-weight: bold;
+	margin: 20px 0;
+	word-break: break-word;
+}
+
+#home-page .text .middle span {
+	color: var(--color-pattern);
+}
+
+#home-page .text .bottom {
+	font-family: var(--font-pattern1);
+	font-size: 2.4rem;
+}
+
+.button {
+	background-color: var(--color-pattern);
+	color: white;
+	width: 254px;
+	height: 66px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	font-family: var(--font-pattern1);
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.button:hover {
+	background-color: var(--color-pattern-hover);
+}
+
+#home-page img {
+	height: 65.1rem;
+}
+
+#banner {
+	height: 221px;
+	background-image: url("images/banner.png");
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+
+
+#banner .data {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+#banner .data .number {
+	font-family: var(--font-pattern2);
+	font-size: 4rem;
+	font-weight: 400;
+}
+
+#banner .data .information {
+	font-family: var(--font-pattern2);
+	font-size: 2.4rem;
+	font-weight: 300;
+}
+
 h2 {
 	font-family: var(--font-pattern3);
 	font-size: 2.8rem;
@@ -58,9 +142,9 @@ p {
 	font-weight: normal;
 }
 
-#about-us .contents {
-	display: flex;
-	justify-content: space-between;
+#about-us .flex {
+	/* display: flex;
+	justify-content: space-between; */
 	align-items: center;
 }
 
@@ -105,19 +189,6 @@ p {
 	line-height: 25px;
 }
 
-.button {
-	width: 254px;
-	height: 66px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 50px;
-	margin: auto;
-	font-family: var(--font-pattern1);
-	font-size: 1.8rem;
-	font-weight: bold;
-}
-
 #reasons {
 	/* background-image: url("images/reasons-background.png");
 	background-repeat: no-repeat;
@@ -130,14 +201,15 @@ p {
 }
 
 #reasons .button {
-	color: white;
-	background-color: var(--color-pattern);
+	justify-content: center;
+	align-items: center;
+	margin: auto;
 	margin-top: 35px;
 }
 
-#reasons .button:hover {
-	background-color: var(--color-pattern-hover);
-}
+/* #reasons .button:hover {
+	
+} */
 
 #reasons .r-numeration1 {}
 
@@ -165,7 +237,7 @@ p {
 
 .r-numeration2 .num {
 	font-family: var(--font-pattern2);
-	font-size: 2.5em;
+	font-size: 4em;
 	color: white;
 	font-weight: bold;
 	display: flex;
@@ -259,10 +331,10 @@ footer {
 	background-color: var(--color-pattern);
 }
 
-footer .contents {
+/* footer .flex {
 	display: flex;
 	justify-content: space-between;
-}
+} */
 
 footer .title {
 	font-family: var(--font-pattern2);
@@ -309,13 +381,13 @@ footer .title {
 	opacity: 80%;
 }
 
-.informations {
+footer .informations {
 	font-family: var(--font-pattern1);
 	font-size: 1.6rem;
 	margin: 20px 0;
 }
 
-.information {
+footer .information {
 	margin: 20px 0;
 }
 
@@ -351,10 +423,6 @@ footer .title {
 		width: 90%;
 	}
 
-	#reasons {
-		font-size: 13.5px;
-	}
-
 	.form button {
 		display: flex;
 		justify-content: center;
@@ -387,7 +455,7 @@ footer .title {
 		width: 100%;
 	}
 
-	footer .contents {
+	footer .flex {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
@@ -400,6 +468,33 @@ footer .title {
 }
 
 @media (max-width: 992px) {
+	#home-page .text {
+		text-align: center;
+	}
+
+	#home-page .button {
+		margin: auto;
+		margin-top: 20px;
+	}
+
+	#home-page img {
+		display: none;
+	}
+
+	#banner {
+		height: auto;
+		background-size: cover;
+	}
+
+	#banner .flex {
+		/* display: block; */
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	#banner .data {
+		margin: 10px;
+	}
 
 	#about-us .first-section,
 	#about-us .second-section,
@@ -414,9 +509,10 @@ footer .title {
 	}
 
 	#about-us .text {
-		width: 100vw;
+		width: 100%;
 		height: auto;
 		border-radius: 0;
+		padding: 0;
 	}
 
 	#about-us img {
@@ -478,6 +574,22 @@ footer .title {
 	/* html {
 		font-size: 35%;
 	} */
+
+	#banner .flex {
+		display: block;
+	}
+
+	#banner .data {
+		margin: 40px 0;
+	}
+
+	#banner .data:first-child {
+		margin-top: 0;
+	}
+
+	#banner .data:last-child {
+		margin-bottom: 0;
+	}
 
 	#about-us .first-section,
 	#about-us .second-section,
