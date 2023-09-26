@@ -760,11 +760,15 @@ footer .information {
 		justify-content: unset;
 	}
 
-	/* .f-left,
+	footer .flex {
+		justify-content: start;
+	}
+
+	.f-left,
 	.f-center,
 	.f-right {
 		width: auto;
-	} */
+	}
 }
 
 
