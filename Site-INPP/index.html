@@ -9,12 +9,55 @@
 	<title>Instituto Nacional de Parapsicologia</title>
 </head>
 <body>
+	<nav id="menu-desktop">
+		<div class="container">
+			<div class="contents flex">
+				<ul>
+					<li>
+						<a href="#">
+							<picture>
+								<source media="(max-width: 992px)" srcset="images/logo-inpp-pequena.png" type="image/png">
+								<img src="images/logo-inpp.png" alt="Logo Instituto Nacional de Parapsicologia">
+							</picture>
+						</a>
+					</li>
+				</ul>
+				<ul class="menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Sobre</a></li>
+					<li><a href="#">Fale Conosco</a></li>
+					<li><a href="#">Cursos Gratuitos</a></li>
+					<li><a href="#">Todos os Cursos</a></li>
+					<li class="list-login"><a href="#" class="login">Já sou Aluno</a></li>
+					<li class="list-menu-toggle">
+						<button class="menu-toggle" onclick="openMenu()">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<nav id="menu-mobile">
+		<ul class="menu">
+			<li class="title">Menu</li>
+			<li><a href="#"><img src="images/menu-mobile-home.png" alt="">Home</a></li>
+			<li><a href="#"><img src="images/menu-mobile-sobre.png" alt="">Sobre</a></li>
+			<li><a href="#"><img src="images/menu-mobile-fale-conosco.png" alt="">Fale Conosco</a></li>
+			<li><a href="#"><img src="images/menu-mobile-mobile-cursos-gratuitos.png" alt="">Cursos Gratuitos</a></li>
+			<li><a href="#"><img src="images/menu-todos-cursos.png" alt="">Todos os Cursos</a></li>
+		</ul>
+	</nav>
+
 	<section id="home-page" class="container">
 		<div class="contents">
 			<div class="flex">
 				<div class="text">
 					<div class="up">Mais de 10.000 Alunos Formados</div>
-					<div class="middle">A <span>maior escola</span> de Parapsicologia do Brasil</div>
+					<div class="middle">A <span>maior escola</span> de <span>Parapsicologia</span> do Brasil</div>
 					<div class="bottom">Estudo conosco agora mesmo, sem sair de casa!</div>
 					<a href="#" class="button">Ver cursos</a>
 				</div>
@@ -291,5 +334,7 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="script.js"></script>
 </body>
 </html>
