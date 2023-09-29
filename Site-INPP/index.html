@@ -9,12 +9,55 @@
 	<title>Instituto Nacional de Parapsicologia</title>
 </head>
 <body>
+	<nav id="menu-desktop">
+		<div class="container">
+			<div class="contents flex">
+				<ul>
+					<li>
+						<a href="#">
+							<picture>
+								<source media="(max-width: 992px)" srcset="images/logo-inpp-pequena.png" type="image/png">
+								<img src="images/logo-inpp.png" alt="Logo Instituto Nacional de Parapsicologia">
+							</picture>
+						</a>
+					</li>
+				</ul>
+				<ul class="menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#about-us">Sobre</a></li>
+					<li><a href="#">Fale Conosco</a></li>
+					<li><a href="#">Cursos Gratuitos</a></li>
+					<li><a href="#">Todos os Cursos</a></li>
+					<li class="list-login"><a href="#" class="login">Já sou Aluno</a></li>
+					<li class="list-menu-toggle">
+						<button class="menu-toggle" onclick="openMenu()">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<nav id="menu-mobile">
+		<ul class="menu">
+			<li class="title">Menu</li>
+			<li><a href="#"><img src="images/menu-mobile-home.png" alt="">Home</a></li>
+			<li><a href="#about-us"><img src="images/menu-mobile-sobre.png" alt="">Sobre</a></li>
+			<li><a href="#"><img src="images/menu-mobile-fale-conosco.png" alt="">Fale Conosco</a></li>
+			<li><a href="#"><img src="images/menu-mobile-mobile-cursos-gratuitos.png" alt="">Cursos Gratuitos</a></li>
+			<li><a href="#"><img src="images/menu-todos-cursos.png" alt="">Todos os Cursos</a></li>
+		</ul>
+	</nav>
+
 	<section id="home-page" class="container">
 		<div class="contents">
 			<div class="flex">
 				<div class="text">
 					<div class="up">Mais de 10.000 Alunos Formados</div>
-					<div class="middle">A <span>maior escola</span> de Parapsicologia do Brasil</div>
+					<div class="middle">A <span>maior escola</span> de <span>Parapsicologia</span> do Brasil</div>
 					<div class="bottom">Estudo conosco agora mesmo, sem sair de casa!</div>
 					<a href="#" class="button">Ver cursos</a>
 				</div>
@@ -115,6 +158,14 @@
 		</div>
 	</section>
 
+	<!-- <section id="our-mission" class="container">
+		<div class="contents">
+			<h2>Nossa Missão</h2>
+			<h3>Nossa Missão</h3>
+			
+		</div>
+	</section> -->
+
 	<section id="reasons" class="container">
 		<div class="contents">
 			<div class="text">
@@ -211,6 +262,285 @@
 		</div>
 	</section>
 
+	<section id="comments" class="container">
+		<div class="contents">
+			<h2>Nossos Alunos</h2>
+			<h3>O que dizem da gente?</h3>
+
+			
+			
+			<div class="slider">
+				<button class="button-left" onclick="leftTranslateComments()"></button>
+				<button class="button-right" onclick="rightTranslateComments()"></button>
+
+				<div class="slider2">
+
+					<div class="slide">
+						<div class="text">
+							<img src="images/comments-image1.png" alt="">
+							<div class="name">Marcelo Garcia</div>
+							<div class="location">Londrina, Paraná</div>
+							<p class="comment">
+								“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+							</p>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="text">
+							<img src="images/comments-image1.png" alt="">
+							<div class="name">Marcelo Garcia</div>
+							<div class="location">Londrina, Paraná</div>
+							<p class="comment">
+								“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+							</p>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="text">
+							<img src="images/comments-image1.png" alt="">
+							<div class="name">Marcelo Garcia</div>
+							<div class="location">Londrina, Paraná</div>
+							<p class="comment">
+								“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+							</p>
+						</div>
+					</div>
+
+					<div class="slide">
+						<div class="text">
+							<img src="images/comments-image1.png" alt="">
+							<div class="name">Marcelo Garcia</div>
+							<div class="location">Londrina, Paraná</div>
+							<p class="comment">
+								“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+							</p>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="text">
+							<img src="images/comments-image1.png" alt="">
+							<div class="name">Marcelo Garcia</div>
+							<div class="location">Londrina, Paraná</div>
+							<p class="comment">
+								“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+							</p>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="text">
+							<img src="images/comments-image1.png" alt="">
+							<div class="name">Marcelo Garcia</div>
+							<div class="location">Londrina, Paraná</div>
+							<p class="comment">
+								“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+							</p>
+						</div>
+					</div>
+
+					<div class="slide">
+						<div class="text">
+							<img src="images/comments-image1.png" alt="">
+							<div class="name">Marcelo Garcia</div>
+							<div class="location">Londrina, Paraná</div>
+							<p class="comment">
+								“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+							</p>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="text">
+							<img src="images/comments-image1.png" alt="">
+							<div class="name">Marcelo Garcia</div>
+							<div class="location">Londrina, Paraná</div>
+							<p class="comment">
+								“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+							</p>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="text">
+							<img src="images/comments-image1.png" alt="">
+							<div class="name">Marcelo Garcia</div>
+							<div class="location">Londrina, Paraná</div>
+							<p class="comment">
+								“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="faq" class="container">
+		<div class="contents">
+			<div class="group-questions">
+				<h2>Perguntas Frequentes</h2>
+				<h3>FAQ</h3>
+				<div class="box-question">
+					<div class="question">
+						<img src="images/faq-duvida.png" alt="">
+						<div class="title">O que é Parapsicologia?</div>
+						<button onclick="openAnswer(0)">
+							<div class="line"></div>
+							<div class="line"></div>
+						</button>
+					</div>
+					<div class="box-answer">
+						<p class="answer">
+							A parapsicologia é a ciência que estuda os fenômenos da mente, sendo
+							paranormais ou não. Tem como foco principal as capacidades mentais,
+							sejam elas de efeitos diretos do psiquismo: Psigamma, tais como: telepatia,
+							précognição, xenoglossia, etc. Da influência da mente sobre a matéria: Psikappa:
+							telecinese, psicofonia, osmogenênese, etc.
+						</p>
+					</div>
+				</div>
+
+				<div class="box-question">
+					<div class="question">
+						<img src="images/faq-duvida.png" alt="">
+						<div class="title">Depois de formado no curso de Parapsicologia terei o título de Parapsicólogo?</div>
+						<button onclick="openAnswer(1)">
+							<div class="line"></div>
+							<div class="line"></div>
+						</button>
+					</div>
+					<div class="box-answer">
+						<p class="answer">
+							A parapsicologia é a ciência que estuda os fenômenos da mente, sendo
+							paranormais ou não. Tem como foco principal as capacidades mentais,
+							sejam elas de efeitos diretos do psiquismo: Psigamma, tais como: telepatia,
+							précognição, xenoglossia, etc. Da influência da mente sobre a matéria: Psikappa:
+							telecinese, psicofonia, osmogenênese, etc.
+						</p>
+					</div>
+				</div>
+
+				<div class="box-question">
+					<div class="question">
+						<img src="images/faq-duvida.png" alt="">
+						<div class="title">Como e quando receberei meu certificado de conclusão dos cursos?</div>
+						<button onclick="openAnswer(2)">
+							<div class="line"></div>
+							<div class="line"></div>
+						</button>
+					</div>
+					<div class="box-answer">
+						<p class="answer">
+							A parapsicologia é a ciência que estuda os fenômenos da mente, sendo
+							paranormais ou não. Tem como foco principal as capacidades mentais,
+							sejam elas de efeitos diretos do psiquismo: Psigamma, tais como: telepatia,
+							précognição, xenoglossia, etc. Da influência da mente sobre a matéria: Psikappa:
+							telecinese, psicofonia, osmogenênese, etc.
+						</p>
+					</div>
+				</div>
+
+				<div class="box-question">
+					<div class="question">
+						<img src="images/faq-duvida.png" alt="">
+						<div class="title">Qual é o sistema dos cursos?</div>
+						<button onclick="openAnswer(3)">
+							<div class="line"></div>
+							<div class="line"></div>
+						</button>
+					</div>
+					<div class="box-answer">
+						<p class="answer">
+							A parapsicologia é a ciência que estuda os fenômenos da mente, sendo
+							paranormais ou não. Tem como foco principal as capacidades mentais,
+							sejam elas de efeitos diretos do psiquismo: Psigamma, tais como: telepatia,
+							précognição, xenoglossia, etc. Da influência da mente sobre a matéria: Psikappa:
+							telecinese, psicofonia, osmogenênese, etc.
+						</p>
+					</div>
+				</div>
+
+				<div class="box-question">
+					<div class="question">
+						<img src="images/faq-duvida.png" alt="">
+						<div class="title">Quem certifica os cursos do INPP?</div>
+						<button onclick="openAnswer(4)">
+							<div class="line"></div>
+							<div class="line"></div>
+						</button>
+					</div>
+					<div class="box-answer">
+						<p class="answer">
+							A parapsicologia é a ciência que estuda os fenômenos da mente, sendo
+							paranormais ou não. Tem como foco principal as capacidades mentais,
+							sejam elas de efeitos diretos do psiquismo: Psigamma, tais como: telepatia,
+							précognição, xenoglossia, etc. Da influência da mente sobre a matéria: Psikappa:
+							telecinese, psicofonia, osmogenênese, etc.
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<!-- FAQ com Details -->
+	<!-- <section id="faq" class="container">
+		<div class="contents">
+			<div class="group-questions">
+				<details>
+					<summary>O que é Parapsicologia</summary>
+					<p>
+						A parapsicologia é a ciência que estuda os fenômenos da mente, sendo
+						paranormais ou não. Tem como foco principal as capacidades mentais,
+						sejam elas de efeitos diretos do psiquismo: Psigamma, tais como: telepatia,
+						précognição, xenoglossia, etc. Da influência da mente sobre a matéria: Psikappa:
+						telecinese, psicofonia, osmogenênese, etc.
+					</p>
+				</details>
+				<details>
+					<summary>Depois de formado no curso de Parapsicologia terei o título de Parapsicólogo?</summary>
+					<p>
+						A parapsicologia é a ciência que estuda os fenômenos da mente, sendo
+						paranormais ou não. Tem como foco principal as capacidades mentais,
+						sejam elas de efeitos diretos do psiquismo: Psigamma, tais como: telepatia,
+						précognição, xenoglossia, etc. Da influência da mente sobre a matéria: Psikappa:
+						telecinese, psicofonia, osmogenênese, etc.
+					</p>
+				</details>
+				<details>
+					<summary>Como e quando receberei meu certificado de conclusão dos cursos?</summary>
+					<p>
+						A parapsicologia é a ciência que estuda os fenômenos da mente, sendo
+						paranormais ou não. Tem como foco principal as capacidades mentais,
+						sejam elas de efeitos diretos do psiquismo: Psigamma, tais como: telepatia,
+						précognição, xenoglossia, etc. Da influência da mente sobre a matéria: Psikappa:
+						telecinese, psicofonia, osmogenênese, etc.
+					</p>
+				</details>
+				<details>
+					<summary>Qual é o sistema dos cursos?</summary>
+					<p>
+						A parapsicologia é a ciência que estuda os fenômenos da mente, sendo
+						paranormais ou não. Tem como foco principal as capacidades mentais,
+						sejam elas de efeitos diretos do psiquismo: Psigamma, tais como: telepatia,
+						précognição, xenoglossia, etc. Da influência da mente sobre a matéria: Psikappa:
+						telecinese, psicofonia, osmogenênese, etc.
+					</p>
+				</details>
+				<details>
+					<summary>Quem certifica os cursos do INPP?</summary>
+					<p>
+						A parapsicologia é a ciência que estuda os fenômenos da mente, sendo
+						paranormais ou não. Tem como foco principal as capacidades mentais,
+						sejam elas de efeitos diretos do psiquismo: Psigamma, tais como: telepatia,
+						précognição, xenoglossia, etc. Da influência da mente sobre a matéria: Psikappa:
+						telecinese, psicofonia, osmogenênese, etc.
+					</p>
+				</details>
+			</div>
+		</div>
+	</section> -->
+
 	<section id="newsletter" class="container">
 		<div class="contents">
 			<div class="subscribe">
@@ -291,5 +621,7 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="script.js"></script>
 </body>
 </html>
