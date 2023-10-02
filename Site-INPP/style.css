@@ -135,7 +135,7 @@ button.active .line:nth-child(3) {
 	justify-content: center;
 	position: absolute;
 	top: 0;
-	background: var(--color-pattern);
+	background-color: var(--color-pattern);
 	height: 100vh;
 	width: 100vw;
 }
@@ -268,6 +268,74 @@ p {
 	font-weight: normal;
 }
 
+#benefits {
+}
+
+#benefits .flex {
+	align-items: center;
+}
+
+#benefits a {
+	background-color: var(--color-pattern2);
+}
+
+#benefits a:hover {
+	background-color: var(--color-pattern-hover2);
+}
+
+#benefits .group-benefits {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+
+.box-benefits {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 29rem;
+	height: 28.2rem;
+	border: 1px solid #D9731A;
+	border-radius: 20px;
+	box-shadow: 10px 11px 0 0 #D9731A;
+	padding: 15px;
+	gap: 5px;
+}
+
+.box-benefits img {
+	height: 8.6rem;
+}
+
+.box-benefits .title {
+	font-family: var(--font-pattern2);
+	font-size: 2.4rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.box-benefits p {
+	font-family: var(--font-pattern1);
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+#benefits .group-benefits .box-button { /* colocar no lugar certo */
+	margin: auto;
+}
+
+.box-button button {
+	border: 1px solid var(--color-pattern2);
+	border-radius: 100%;
+	padding: 10px;
+	margin-right: 10px;
+}
+
+.box-button button:last-child {
+	margin: 0;
+}
+
 #about-us .flex {
 	/* display: flex;
 	justify-content: space-between; */
@@ -319,7 +387,8 @@ p {
 	line-height: 25px;
 }
 
-#our-mission {}
+#our-mission {
+}
 
 #our-mission h2,
 #our-mission h3 {
@@ -328,14 +397,16 @@ p {
 
 #our-mission .box-grid {
 	display: grid;
+	justify-content: center;
+	align-items: center;
 }
 
 #our-mission .box {
 	width: 383px;
-	height: 130px;
+	/* height: 130px; */
 	border: 1px solid var(--color-pattern);
 	border-radius: 20px;
-	padding: 15px;
+	padding: 20px 15px;
 	box-shadow: 0 0 7px 1px var(--color-pattern);
 }
 
@@ -349,6 +420,10 @@ p {
 #our-mission .box .text {
 	font-family: var(--font-pattern1);
 	font-size: 1.5rem;
+}
+
+#our-mission img {
+	height: 50rem;
 }
 
 #courses {
@@ -565,6 +640,7 @@ p {
 
 #comments {
 	background-color: var(--color-pattern);
+	height: 100vh;
 }
 
 #comments h2,
@@ -625,7 +701,8 @@ p {
 #comments .slider2 {
 	width: 300%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	margin: 50px 0;
 }
 
 #comments .slide {
@@ -683,9 +760,7 @@ p {
 #faq {
 	background-image: url("images/faq-background.png");
 	background-repeat: no-repeat;
-	/* background-size: cover; */
 	background-position: 30%;
-	/* background-attachment: fixed; */
 }
 
 #faq .group-questions {
@@ -901,11 +976,6 @@ footer {
 	background-color: var(--color-pattern);
 }
 
-/* footer .flex {
-	display: flex;
-	justify-content: space-between;
-} */
-
 footer .title {
 	font-family: var(--font-pattern2);
 	font-size: 2.8rem;
@@ -947,7 +1017,7 @@ footer .title {
 	height: 2.2rem;
 }
 
-.social-midia a:hover {
+footer a:hover {
 	opacity: 80%;
 }
 
@@ -961,31 +1031,44 @@ footer .information {
 	margin: 20px 0;
 }
 
+
 .name {
 	font-weight: bold;
-	/* margin-bottom: 5px; */
 }
 
 .number-phone {
 	font-weight: 400;
-	text-decoration: underline;
 }
 
 .number-phone a {
 	color: white;
-}
-
-.number-phone a:hover {
-	opacity: 80%;
+	text-decoration: underline;
 }
 
 .f-right {
 	margin: 0
 }
 
+.f-right a {
+	color: white;
+	text-decoration: underline;
+}
+
 @media (max-width: 1400px) {
 	html {
 		font-size: 55%;
+	}
+
+	#our-mission .flex {
+		flex-direction: column;
+	}
+
+	#our-mission .box {
+		margin: 10px 0;
+	}
+
+	#our-mission img {
+		margin: 20px 0;
 	}
 
 	#courses .box-courses {
@@ -1005,11 +1088,6 @@ footer .information {
 	#courses .course-image {
 		position: unset;
 		width: 100% !important;
-	}
-
-	#courses .course-image img {
-		/* height: 100% !important;
-		width: 100% !important; */
 	}
 
 	#courses .course-image .image1 {
@@ -1249,6 +1327,15 @@ footer .information {
 	#about-us .second-section,
 	#about-us .third-section {
 		height: auto;
+	}
+
+	#our-mission .box {
+		width: auto;
+	}
+
+	#our-mission img {
+		height: auto;
+		width: 100%;
 	}
 
 	#newsletter .contents {
