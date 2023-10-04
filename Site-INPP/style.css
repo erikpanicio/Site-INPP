@@ -275,6 +275,10 @@ p {
 	align-items: center;
 }
 
+#benefits .text {
+	width: 50%;
+}
+
 #benefits a {
 	background-color: var(--color-pattern2);
 }
@@ -283,11 +287,27 @@ p {
 	background-color: var(--color-pattern-hover2);
 }
 
-#benefits .group-benefits {
+#benefits .slider1 {
+	/* width: 100%; */
+	/* width: 50%; */
+	width: 50%;
+	overflow-x: hidden;
+}
+
+#benefits .slider2 {
+	width: 300%;
 	display: flex;
-	justify-content: space-around;
+	transition: transform 1s;
+}
+
+#benefits .group-benefits {
+	width: 100%;
+	display: flex;
 	flex-wrap: wrap;
-	gap: 50px;
+	justify-content: center;
+	flex-direction: row;
+	gap: 5rem;
+	padding: 10px 0;
 }
 
 .box-benefits {
@@ -299,7 +319,7 @@ p {
 	height: 28.2rem;
 	border: 1px solid #D9731A;
 	border-radius: 20px;
-	box-shadow: 10px 11px 0 0 #D9731A;
+	/* box-shadow: 10px 11px 0 0 #D9731A; */
 	padding: 15px;
 	gap: 5px;
 }
@@ -321,15 +341,22 @@ p {
 	text-align: center;
 }
 
-#benefits .group-benefits .box-button { /* colocar no lugar certo */
-	margin: auto;
+#benefits .slider1 .box-button { /* colocar no lugar certo */
+	display: flex;
+	justify-content: center;
+	margin: 40px 0;
 }
 
 .box-button button {
 	border: 1px solid var(--color-pattern2);
 	border-radius: 100%;
-	padding: 10px;
+	padding: 1rem;
 	margin-right: 10px;
+	cursor: pointer;
+}
+
+.box-button button:nth-child(1) {
+	background-color: var(--color-pattern2);
 }
 
 .box-button button:last-child {
@@ -640,7 +667,11 @@ p {
 
 #comments {
 	background-color: var(--color-pattern);
-	height: 100vh;
+	/* height: 100vh; */
+}
+
+#comments .contents {
+	overflow-x: hidden;
 }
 
 #comments h2,
@@ -649,32 +680,11 @@ p {
 	color: white;
 }
 
-/* #comments .buttons {
-	display: flex;
-	justify-content: space-between;
-	position: relative;
-	top: 280px;
-	margin: 0 -50px;
-}
-
-#comments .buttons button {
-	border: 1px solid var(--color-pattern);
-	border-radius: 100%;
-	padding: 20px;
-	background-color: white;
-	transition: all 0.5s;
-	cursor: pointer;
-}
-
-#comments .buttons button:hover {
-	border: 1px solid white;
-	background-color: var(--color-pattern);
-	transition: all 0.5s;
-} */
-
 #comments .box-sliders {
+/* 	width: 100vw; */
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 }
 
 #comments .box-button {
@@ -685,24 +695,29 @@ p {
 }
 
 #comments button {
+	height: 4.2rem;
+	width: 4.2rem;
 	border: 1px solid var(--color-pattern);
 	border-radius: 100%;
-	padding: 20px;
+	/* padding: 2rem; */
 	background-color: white;
 	transition: all 0.5s;
 	cursor: pointer;
 }
 
 #comments .slider1 {
-	width: 100%;
+	/* width: 100%; */
+	width: 100vw;
 	overflow-x: hidden;
 }
 
 #comments .slider2 {
 	width: 300%;
+	/* width: 300vw; */
 	display: flex;
 	justify-content: space-evenly;
 	margin: 50px 0;
+	transition: transform 1s;
 }
 
 #comments .slide {
@@ -715,17 +730,22 @@ p {
 	background-position: center;
 	padding: 20px;
 	border-radius: 20px;
+	margin: 0 5px;
+}
+
+#comments .slide:last-child {
+	margin: 0;
 }
 
 #comments .slide .text {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	/* justify-content: space-evenly; */
 	align-items: center;
-	height: 100%;
+	/* height: 100%; */
 	position: relative;
-	top: -66px;
-	gap: 5px;
+	/* top: -66px; */
+	/* gap: 5px; */
 }
 
 #comments img {
@@ -1103,6 +1123,14 @@ footer .information {
 		margin-top: 20px;
 	}
 
+	#comments .contents {
+		overflow-x: visible;
+	}
+
+	#comments .box-sliders {
+		width: 100vw;
+	}
+
 	.subscribe .text .up {
 		width: 90%;
 	}
@@ -1125,6 +1153,44 @@ footer .information {
 
 	#menu-desktop .menu li:last-child {
 		margin-right: 0;
+	}
+
+	#benefits .flex {
+		flex-direction: column;
+	}
+
+	#benefits .slider1 {
+		width: 100vw;
+		overflow-x: scroll;
+		padding: 20px 0;
+	}
+
+	#benefits .slider2 {
+		transform: translateX(0px) !important;
+	}
+
+	#benefits .group-benefits {
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		gap: 0;
+	}
+
+	.box-benefits {
+		margin-right: 20px;
+	}
+
+	#benefits .slider1 .box-button {
+		display: none;
+	}
+
+	#benefits .text {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	#benefits a {
+		margin: 20px auto auto auto;
 	}
 
 	#faq {
@@ -1270,6 +1336,14 @@ footer .information {
 
 	#reasons .numeration {
 		width: 350px;
+	}
+
+	#comments .slider1 {
+		overflow-x: scroll;
+	}
+
+	#comments .box-button {
+		display: none;
 	}
 
 	#faq .box-question {

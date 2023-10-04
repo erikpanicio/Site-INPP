@@ -93,7 +93,7 @@
 		</section>
 	</section>
 
-	<section id="benefits" class="container" style="display: none;">
+	<section id="benefits" class="container" >
 		<div class="contents">
 			<div class="flex">
 				<div class="text">
@@ -104,39 +104,105 @@
 					</p>
 					<a href="#" class="button">Faça parte também!</a>
 				</div>
-				<div class="group-benefits">
-					<div class="box-benefits">
-						<img src="images/benefits-certificate.svg" alt="">
-						<div class="title">Certificações</div>
-						<p>
-							Depois de concluído o curso desejado você receberá certificação de aptidão para exercer a profissão!
-						</p>
-					</div>
-					<div class="box-benefits">
-						<img src="images/benefits-professor.svg" alt="">
-						<div class="title">Professores Especialistas</div>
-						<p>
-							Professores com grande qualificação profissional para proporcionar a didática mais qualificada e simplificada para você
-						</p>
-					</div>
-					<div class="box-benefits">
-						<img src="images/benefits-customer-service.svg" alt="">
-						<div class="title">Atendimento Qualificado</div>
-						<p>
-							Professores com grande qualificação profissional para proporcionar a didática mais qualificada e simplificada para você
-						</p>
-					</div>
-					<div class="box-benefits">
-						<img src="images/benefits-star.svg" alt="">
-						<div class="title">Experiência em Ensino</div>
-						<p>
-							Temos mais de 15 anos de experiência ensinado e profissionalizando milhares de alunos
-						</p>
+				<div class="slider1">
+					<div class="slider2">
+						<div class="group-benefits">
+							<div class="box-benefits">
+								<img src="images/benefits-certificate.svg" alt="">
+								<div class="title">Certificações</div>
+								<p>
+									Depois de concluído o curso desejado você receberá certificação de aptidão para exercer a profissão!
+								</p>
+							</div>
+							<div class="box-benefits">
+								<img src="images/benefits-professor.svg" alt="">
+								<div class="title">Professores Especialistas</div>
+								<p>
+									Professores com grande qualificação profissional para proporcionar a didática mais qualificada e simplificada para você
+								</p>
+							</div>
+							<div class="box-benefits">
+								<img src="images/benefits-customer-service.svg" alt="">
+								<div class="title">Atendimento Qualificado</div>
+								<p>
+									Professores com grande qualificação profissional para proporcionar a didática mais qualificada e simplificada para você
+								</p>
+							</div>
+							<div class="box-benefits">
+								<img src="images/benefits-star.svg" alt="">
+								<div class="title">Experiência em Ensino</div>
+								<p>
+									Temos mais de 15 anos de experiência ensinado e profissionalizando milhares de alunos
+								</p>
+							</div>
+						</div>
+
+						<div class="group-benefits">
+							<div class="box-benefits">
+								<img src="images/benefits-certificate.svg" alt="">
+								<div class="title">Certificações</div>
+								<p>
+									Depois de concluído o curso desejado você receberá certificação de aptidão para exercer a profissão!
+								</p>
+							</div>
+							<div class="box-benefits">
+								<img src="images/benefits-professor.svg" alt="">
+								<div class="title">Professores Especialistas</div>
+								<p>
+									Professores com grande qualificação profissional para proporcionar a didática mais qualificada e simplificada para você
+								</p>
+							</div>
+							<div class="box-benefits">
+								<img src="images/benefits-customer-service.svg" alt="">
+								<div class="title">Atendimento Qualificado</div>
+								<p>
+									Professores com grande qualificação profissional para proporcionar a didática mais qualificada e simplificada para você
+								</p>
+							</div>
+							<div class="box-benefits">
+								<img src="images/benefits-star.svg" alt="">
+								<div class="title">Experiência em Ensino</div>
+								<p>
+									Temos mais de 15 anos de experiência ensinado e profissionalizando milhares de alunos
+								</p>
+							</div>
+						</div>
+						
+						<div class="group-benefits">
+							<div class="box-benefits">
+								<img src="images/benefits-certificate.svg" alt="">
+								<div class="title">Certificações</div>
+								<p>
+									Depois de concluído o curso desejado você receberá certificação de aptidão para exercer a profissão!
+								</p>
+							</div>
+							<div class="box-benefits">
+								<img src="images/benefits-professor.svg" alt="">
+								<div class="title">Professores Especialistas</div>
+								<p>
+									Professores com grande qualificação profissional para proporcionar a didática mais qualificada e simplificada para você
+								</p>
+							</div>
+							<div class="box-benefits">
+								<img src="images/benefits-customer-service.svg" alt="">
+								<div class="title">Atendimento Qualificado</div>
+								<p>
+									Professores com grande qualificação profissional para proporcionar a didática mais qualificada e simplificada para você
+								</p>
+							</div>
+							<div class="box-benefits">
+								<img src="images/benefits-star.svg" alt="">
+								<div class="title">Experiência em Ensino</div>
+								<p>
+									Temos mais de 15 anos de experiência ensinado e profissionalizando milhares de alunos
+								</p>
+							</div>
+						</div>
 					</div>
 					<div class="box-button">
-						<button></button>
-						<button></button>
-						<button></button>
+						<button onclick="transitionBenefits(0)"></button>
+						<button onclick="transitionBenefits(1)"></button>
+						<button onclick="transitionBenefits(2)"></button>
 					</div>
 				</div>
 			</div>
@@ -441,14 +507,14 @@
 		</div>
 	</section>
 
-	<section id="comments" class="container" style="display: none;">
+	<section id="comments" class="container">
 		<div class="contents">
 			<h2>Nossos Alunos</h2>
 			<h3>O que dizem da gente?</h3>
 
 			<div class="box-sliders">
 				<div class="box-button">
-					<button class="button-left"></button>
+					<button class="button-left" onclick="leftTransitionComments()"></button>
 				</div>
 				<div class="slider1">
 					<div class="slider2">
@@ -458,94 +524,94 @@
 								<div class="name">Marcelo Garcia</div>
 								<div class="location">Londrina, Paraná</div>
 								<p class="comment">
-									“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+									Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que renasci nesta mesma vida. Gratidão aos colaboradores, pelo carinho, dedicação e comprometimento desse lugar abençoado.
 								</p>
 							</div>
 						</div>
 						<div class="slide">
 							<div class="text">
-								<img src="images/comments-image1.png" alt="">
-								<div class="name">Marcelo Garcia</div>
+								<img src="images/comments-image2.jpg" alt="">
+								<div class="name">Roseli Gonçalves</div>
 								<div class="location">Londrina, Paraná</div>
 								<p class="comment">
-									“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+									O INPP é uma escola que se preocupa com seus alunos e investe em proporcionar um ensino de qualidade aos mesmos. Faz questão que seus alunos sejam bons profissionais e trabalhem regulamentados. Sua idoneidade , responsabilidade e ética faz do Sinthalpar um orgulho em te-lo como parceiro. O INPP tem nosso irrestrito apoio e colaboração além do maior respeito ao trabalho desenvolvido por sua equipe.
 								</p>
 							</div>
 						</div>
 						<div class="slide">
 							<div class="text">
-								<img src="images/comments-image1.png" alt="">
-								<div class="name">Marcelo Garcia</div>
-								<div class="location">Londrina, Paraná</div>
+								<img src="images/comments-image3.jpg" alt="">
+								<div class="name">Carine Weiss</div>
+								<div class="location">Monte Castelo - SC</div>
 								<p class="comment">
-									“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+									Ao Instituto Nacional de Parapsicologia Psicometafisica quero registrar meu profundo agradecimento pelos ensinamentos e experiências adquiridas durante o curso, onde a busca do conhecimento de como ser melhor, reflete, em todo o universo e, o quanto o ser humano é capaz de fazer muito além do que pensa. Explorar cada informação recebida e enchergar além do que os olhos podem ver é libertador.  Ao prof. Rogelio saiba que não há palavras para agradecer por esta oportunidade.
 								</p>
 							</div>
 						</div>
 						<div class="slide">
 							<div class="text">
-								<img src="images/comments-image1.png" alt="">
-								<div class="name">Marcelo Garcia</div>
-								<div class="location">Londrina, Paraná</div>
+								<img src="images/comments-image4.jpg" alt="">
+								<div class="name">Lidiane</div>
+								<div class="location">Rio Negro - PR</div>
 								<p class="comment">
-									“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+									Sou associada ao Instituto Nacional de Parapsicologia e Psicometafisica ( INPP) e admiro muito esta equipe da luz. Realizo e realizei os cursos fornecidos por eles, todos com Certificados e Registrados no Conselho Holistico do Paraná. Dizem que quando o discípulo esta pronto o Mestre aparece, esta frase é o resumo de vocês na minha vida !!! Agradeço toda a equipe do INPP, principalmente ao professor Rogelio, pois são profissionais altamente capacitados, experientes, sérios e com muito comprometimento e envolvimento no que fazem. ( vir de Londrina para cá não é fácil!!!). Nota positiva e infinita para vocês. Gratidão sempre!!
 								</p>
 							</div>
 						</div>
 						<div class="slide">
 							<div class="text">
-								<img src="images/comments-image1.png" alt="">
-								<div class="name">Marcelo Garcia</div>
-								<div class="location">Londrina, Paraná</div>
+								<img src="images/comments-image5.jpeg" alt="">
+								<div class="name">Alexandre Celso Vasconcelos</div>
+								<div class="location">Curitiba</div>
 								<p class="comment">
-									“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+									Sou Professor do ensino público e privado, alem de parapsicólogo e psicanalisa formado  pelo Instituto Nacional de Parapsicologia e Psicometafísica .Quero deixar aqui neste canal meu agradecimento e minha admiração pela seriedade, gentileza, profissionalismo e atenção que toda a equipe desde funcionários ate do corpo docente que na minha opinião são ótimos, com excelente didatica e alto conhecimento. Parabéns ao Instituto!  Recomendo a todos.  Alexandre Celso Vasconcelos Curitiba-Pr CNTP 9071
 								</p>
 							</div>
 						</div>
 						<div class="slide">
 							<div class="text">
-								<img src="images/comments-image1.png" alt="">
-								<div class="name">Marcelo Garcia</div>
-								<div class="location">Londrina, Paraná</div>
+								<img src="images/comments-image6.jpg" alt="">
+								<div class="name">Cristiano Mendes</div>
+								<div class="location">Curitiba</div>
 								<p class="comment">
-									“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+									Povo abençoado.  Gostaria de primeiramente agradecer ao Instituto Nacional De Parapsicologia – Psicometafísica INPP, pela acolhida nas formações que eu realizei em Mafra – SC. Foram dois anos intensos de muito conhecimento e prática. Além de ter conhecido pessoas extraordinárias e professores realmente comprometidos com o Ser Humano. Aproveito o momento para pedir a você que está lendo este depoimento que conheça o Instituto, que faça sua formação/curso na área desejada.  Será um divisor de águas na sua trajetória como terapeuta de sucesso. Um grande e fraterno abraço a todos.
 								</p>
 							</div>
 						</div>
 						<div class="slide">
 							<div class="text">
-								<img src="images/comments-image1.png" alt="">
-								<div class="name">Marcelo Garcia</div>
-								<div class="location">Londrina, Paraná</div>
+								<img src="images/comments-image7.jpg" alt="">
+								<div class="name">Gislaine Coelho</div>
+								<div class="location">Caraguatatuba - SP</div>
 								<p class="comment">
-									“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+									No INPP tive a oportunidade de desenvolver estudos e pesquisas de alto grau e qualidade com facilidade e acesso prático com profissionais capacitados , materiais atualizados e por ter sido realizado EAD Tive a orientação e atenção necessárias para a conclusão dos cursos. Que foram : *Parapsicologia com Terapias Holísticas *Psicanálise 
 								</p>
 							</div>
 						</div>
 						<div class="slide">
 							<div class="text">
-								<img src="images/comments-image1.png" alt="">
-								<div class="name">Marcelo Garcia</div>
-								<div class="location">Londrina, Paraná</div>
+								<img src="images/comments-image8.jpg" alt="">
+								<div class="name">Crismédio Vieira</div>
+								<div class="location"> Maceió - Alagoas</div>
 								<p class="comment">
-									“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+									Foi grande a contribuição que o INPP deu a mim durante o tempo em que fui seu aluno. Conhecimento e experiência que levarei para toda a vida. Gostaria de manifestar minha gratidão a todos os colaboradores deste ilustre instituto, na certeza que o mesmo representa um ganho para a educação do nosso Brasil.
 								</p>
 							</div>
 						</div>
 						<div class="slide">
 							<div class="text">
-								<img src="images/comments-image1.png" alt="">
-								<div class="name">Marcelo Garcia</div>
-								<div class="location">Londrina, Paraná</div>
+								<img src="images/comments-image9.png" alt="">
+								<div class="name">Cidarta Ferreira</div>
+								<div class="location">Guarapuava - PR</div>
 								<p class="comment">
-									“Antes de conhecer o INPP, eu me sentia perdido! Percebia que algo estava mudando dentro de mim, mas não sabia explicar, não sabia em que direção seguir. O aprendizado dentro do Instituto me permitiu enxergar melhor essa transformação, e com isso, mudou minha vida e tudo que estava ao meu redor. Enfim, eu hoje posso afirmar que sou muito mais completo como ser, costumo dizer que”
+									Estou morando atualmente em Guarapuava PR, mas foi em Londrina há alguns anos, que conheci o Instituto Nacional de Parapsicologia (INPP), que tive a magnífica experiência de ser terapeuta holística com adoráveis professores, onde cada um me ensinou o universo de possibilidades que temos para seguirmos a jornada da busca por conhecimento e autoconhecimento, e neste caminho pude ampliar a percepção holística que envolve a todos os seres que aqui habitamos, tanto o material, social, espiritual, ambiental e emocional. Agradeço imensamente a todos os professores do Instituto, em especial Rogelio Raquel, que com toda atenção que lhe é peculiar, abriu-me as portas para para essa nova visão.
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="box-button">
-					<button class="button-right"></button>
+					<button class="button-right" onclick="rightTransitionComments()"></button>
 				</div>
 			</div>
 		</div>
