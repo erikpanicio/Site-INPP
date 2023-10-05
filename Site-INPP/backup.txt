@@ -1,0 +1,496 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@300;400;700&family=Pacifico&display=swap');
+
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+:root {
+	--color-pattern: #810CE8;
+	--color-pattern-hover: #6c339e;
+	--color-pattern2: #F205CB;
+	--color-pattern-hover2: #CA0EAB;
+
+	--font-pattern1: 'Inter', Arial, Helvetica, sans-serif, serif;
+	--font-pattern2: 'Merriweather', Arial, Helvetica, sans-serif, serif;
+	--font-pattern3: 'Pacifico', Arial, Helvetica, sans-serif, serif;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	/* Ver \/ */
+    align-items: center;
+	height: 100%;
+	/* margin: 60px 0; */ /* TIRAR?? */
+}
+
+.contents {
+	width: 1530px;
+	margin: 0 30px;
+	margin: 80px 30px;
+}
+
+h2 {
+	font-family: var(--font-pattern3);
+	font-size: 1.75em;
+	font-weight: normal;
+	margin-bottom: 11px;
+/* 	margin-bottom: 35px; */
+}
+
+h3 {
+	font-family: var(--font-pattern2);
+	font-size: 2.5em;
+	font-weight: bold;
+	margin-bottom: 35px;
+}
+
+p {
+	font-family: var(--font-pattern1);
+	font-size: 18px;
+	font-weight: normal;
+}
+
+#about-us .contents {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#about-us img {
+	width: 528.83px;
+	height: 507.18px;
+}
+
+#about-us .first-section,
+#about-us .second-section,
+#about-us .third-section {
+	height: 700px;
+	background-image: url("images/about-us-background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: var(--color-pattern);
+}
+
+#about-us .second-section {
+	background-color: white;
+}
+
+#about-us .text {
+	/* width: 57vw;
+	height: 57vh; */
+	width: 40.625vw;
+	/* height: 416px; */
+	background-color: white;
+	border-radius: 20px;
+	padding: 1.9375rem 2.875rem;
+}
+
+#about-us .second-section .text {
+	background-color: var(--color-pattern);
+	color: white;
+}
+
+#about-us .text p {
+	font-size: 1.125em;
+	line-height: 25px;
+}
+
+.button {
+	width: 254px;
+	height: 66px;
+	display: flex;
+	/* text-align: center; */
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	margin: auto;
+	font-family: var(--font-pattern1);
+	font-weight: bold;
+}
+
+#reasons {
+	background-image: url("images/reasons-background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#reasons .text {
+	text-align: center;
+	margin: 0 150px;
+}
+
+#reasons .button {
+	color: white;
+	background-color: var(--color-pattern);
+	margin-top: 35px;
+}
+
+#reasons .button:hover {
+	background-color: var(--color-pattern-hover);
+}
+
+#reasons .r-numeration {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 103px;
+}
+
+#reasons .numeration {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 418px;
+	height: 155px;
+	border: 1px solid var(--color-pattern);
+	border-radius: 20px;
+	padding: 10px;
+	margin: 13px;
+	box-shadow: -10px 11px 0 0 var(--color-pattern2);
+}
+
+.r-numeration .r-num {
+	
+}
+
+.r-numeration .num {
+	font-family: var(--font-pattern2);
+	font-size: 2.5em;
+	color: white;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-pattern);
+	border-radius: 50%;
+	width: 78.39px;
+	height: 78.39px;
+}
+
+.r-numeration .r-text {
+	margin-left: 15px;
+} 
+
+.r-numeration .r-text .title {
+	font-family: var(--font-pattern2);
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.r-numeration .r-text p {
+	font-size: 0.87em;
+	/* font-size: 16px; */
+}
+
+#newsletter .subscribe {
+	/* border: 1px solid black; */
+	border-radius: 20px;
+	box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.250);
+	padding: 55px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.subscribe .text .up {
+	width: 716px;
+	font-family: var(--font-pattern2);
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.subscribe .text .bottom {
+	font-family: var(--font-pattern1);
+	font-size: 25px;
+	font-weight: 600;
+	margin: 22px 0;
+}
+
+.form {
+}
+
+.form input:not(input[type=checkbox]) {
+	font-size: 24px;
+	display: flex;
+	border: 1px solid black;
+	border-radius: 15px;
+	padding: 15px;
+	margin: 10px 0;
+	/* margin: 10px 50px 0 0; */
+	width: 500px;
+}
+
+.form .checkbox {
+	margin: 20px 0;
+	display: flex;
+}
+
+.form input[type=checkbox] {
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+}
+
+.form label {
+	font-size: 24px;
+}
+
+.form button {
+	font-family: var(--font-pattern1);
+	font-size: 24px;
+	font-weight: bold;
+	background-color: var(--color-pattern);
+	color: white;
+	padding: 20px 60px;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.form button:hover {
+	background-color: var(--color-pattern-hover);
+}
+
+footer {
+	background-color: var(--color-pattern);
+}
+
+footer .contents {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .title {
+	font-family: var(--font-pattern2);
+	font-size: 28px;
+	font-weight: 700;
+	color: white;
+}
+
+.f-left,
+.f-center,
+.f-right {
+	width: 350px;
+	margin-right: 10px;
+	color: white;
+}
+
+.f-left {
+	width: 350px;
+}
+
+.f-left p {
+	margin: 10px 0 26px 0;
+	font-size: 16px;
+}
+
+.f-left .social-midia {
+	display: flex;
+}
+
+.social-midia a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 1px solid white;
+	border-radius: 100%;
+	padding: 20px;
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+}
+
+.social-midia a:hover {
+	opacity: 80%;
+}
+
+.informations {
+	font-family: var(--font-pattern1);
+	font-size: 16px;
+	margin: 20px 0;
+}
+
+.information {
+	margin: 20px 0;
+}
+
+.name {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.number-phone {
+	font-weight: 400;
+	text-decoration: underline;
+}
+
+.number-phone a {
+	color: white;
+}
+
+.number-phone a:hover {
+	opacity: 80%;
+}
+
+.f-right {
+	margin: 0
+}
+
+@media (max-width: 1400px) {
+	/* teste */
+
+	h2 {
+		font-size: 2.12vw;
+  	}
+
+	h3 {
+		font-size: 2.6vw;
+ 	 }
+
+	p {
+		font-size: 0.75vw;
+	}
+
+	#reasons .numeration {
+		width: 25vw;
+	}
+	/* teste */
+
+	#reasons .r-numeration {
+		justify-content: space-evenly;
+	}
+
+	#reasons {
+		font-size: 13.5px;
+	}
+
+	/* #reasons .numeration {
+		margin: 20px 10px;
+		width: 350px;
+		 */
+		/* width: 29.85vw;
+		height: 11.07vw; */
+		
+		/* max-width: 26vw; */
+	/* }
+ */
+	#newsletter .subscribe {
+		align-items: center;
+		flex-direction: column;
+		padding: 40px;
+	}
+
+	.subscribe .text .up {
+		width: auto;
+		text-align: center;
+	}
+
+	.subscribe .text .bottom {
+		text-align: center;
+	}
+
+	.form button {
+		display: flex;
+		justify-content: center;
+	}
+	
+}
+
+@media (max-width: 1200px) {
+	/* teste */
+
+	h2 { /* 30px */
+		font-size: 2.5vw;
+  	}
+
+	h3 {
+		font-size: 3vw;
+ 	 }
+
+	p {
+		font-size: 1.2vw;
+	}
+
+	#reasons .numeration {
+		width: 34.83333333333333vw;
+	}
+	/* teste */
+
+	footer .contents {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.f-left, 
+	.f-center, 
+	.f-right {
+		margin: 20px;
+	}
+}
+
+@media (max-width: 992px) {
+	#about-us .first-section, 
+	#about-us .second-section, 
+	#about-us .third-section {
+		height: auto;
+		background-image: unset;
+		background-color: unset;
+  }
+
+  #about-us .second-section .text {
+		background-color: var(--color-pattern);
+		color: white;
+	}
+
+	#about-us .text {
+		width: 100vw;
+		height: auto;
+		border-radius: 0;
+	}
+
+	#about-us img {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	#reasons .text {
+		margin: 0;
+	}
+	
+	.form input:not(input[type=checkbox]) {
+		width: 100%;
+	}
+}
+
+@media (max-width: 576px) {
+	
+}
+
+
+
+/* 
+container geral: 100%
+
+1200px
+992px
+576px
+
+576px, 768px, 992px, 1200px e 1400px.
+
+como funciona o redimencionalmento do figma, ele se ajusta à tela...
+VW se baseando no media query?
+
+Pega o valor padrão da div e tranforma em VW
+Ex: 500px, se a tela for de 1400, faz: 1400/100 = 14 | 500/14 = 35vw
+			  se a tela agora for de 1200, faz: 1200/100 = 12 | 500/12 = 41vw (aumentou como deveria)
+			  se a tela agora for de 80, faz: 80/100 = 8 | 500/8 = 62vw (aumentou como deveria)
+*/
