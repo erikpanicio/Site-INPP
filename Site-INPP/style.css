@@ -26,6 +26,17 @@ html {
 	font-size: 62.5%;
 }
 
+body::-webkit-scrollbar {
+	/* fundo do scroll */
+	height: 5px;
+	width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+	/* scroll que se movimenta */
+	background-color: var(--color-pattern);
+}
+
 .container {
 	display: flex;
 	justify-content: center;
@@ -75,7 +86,7 @@ ul {
 	display: block;
 	border: 1px solid black;
 	border-radius: 50px;
-	padding: 2rem 30px;
+	padding: 2rem 3rem;
 	transition: background-color 0.3s;
 }
 
@@ -269,6 +280,10 @@ p {
 }
 
 #benefits {
+	background-image: url("images/benefits-background.svg");
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: cover;
 }
 
 #benefits .flex {
@@ -276,7 +291,8 @@ p {
 }
 
 #benefits .text {
-	width: 50%;
+	width: 40%;
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
 }
 
 #benefits a {
@@ -293,6 +309,17 @@ p {
 	width: 50%;
 	overflow-x: hidden;
 }
+
+#benefits .slider1::-webkit-scrollbar {
+	/* fundo do scroll */
+	height: 5px;
+}
+
+#benefits .slider1::-webkit-scrollbar-thumb  {
+	/* scroll que se movimenta */
+	background-color: #D9731A;
+}
+
 
 #benefits .slider2 {
 	width: 300%;
@@ -319,7 +346,8 @@ p {
 	height: 28.2rem;
 	border: 1px solid #D9731A;
 	border-radius: 20px;
-	/* box-shadow: 10px 11px 0 0 #D9731A; */
+	box-shadow: 1rem 1.1rem 0 0 #D9731A;
+	background-color: white;
 	padding: 15px;
 	gap: 5px;
 }
@@ -341,7 +369,7 @@ p {
 	text-align: center;
 }
 
-#benefits .slider1 .box-button { /* colocar no lugar certo */
+.box-button { /* colocar no lugar certo */
 	display: flex;
 	justify-content: center;
 	margin: 40px 0;
@@ -465,16 +493,23 @@ p {
 #courses .box-courses {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 #courses .course {
-	width: 40rem;
+	/* width: 40rem; */
+	width: 44rem;
 	background-color: white;
 	border-radius: 20px;
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	margin-bottom: 50px;
+}
+
+#courses .course:nth-child(3n+2) {
+	margin: 0 10px 50px 0;
 }
 
 #courses .course-image {
@@ -665,13 +700,10 @@ p {
 	font-size: 1.4rem;
 }
 
+/* Comments */
+
 #comments {
 	background-color: var(--color-pattern);
-	/* height: 100vh; */
-}
-
-#comments .contents {
-	overflow-x: hidden;
 }
 
 #comments h2,
@@ -681,96 +713,115 @@ p {
 }
 
 #comments .box-sliders {
-/* 	width: 100vw; */
+	/* display: flex; */
+	/* width: 100vw; */
 	width: 100%;
-	display: flex;
-	/* justify-content: space-between; */
 }
 
+/* 
+Button antigo
 #comments .box-button {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin: 0 5px;
+	align-items: center;
 }
 
-#comments button {
+#comments .box-button button {
 	height: 4.2rem;
 	width: 4.2rem;
-	border: 1px solid var(--color-pattern);
+} */
+
+#comments .box-button button {
+	border: 1px solid white;
 	border-radius: 100%;
-	/* padding: 2rem; */
-	background-color: white;
-	transition: all 0.5s;
+	padding: 1rem;
+	margin-right: 10px;
 	cursor: pointer;
 }
 
+#comments .box-button button:nth-child(1) {
+	background-color: white;
+}
+
+#comments .box-button {
+	margin: 20px auto auto auto;
+}
+
+#comments .box-button {
+
+}
+
 #comments .slider1 {
-	/* width: 100%; */
-	width: 100vw;
+	width: 100%;
 	overflow-x: hidden;
 }
 
 #comments .slider2 {
-	width: 300%;
-	/* width: 300vw; */
 	display: flex;
-	justify-content: space-evenly;
-	margin: 50px 0;
+	justify-content: space-around;
+	width: 300%;
+	margin-top: 30px; /* para mostrar as imagens fora do .comment */
 	transition: transform 1s;
 }
 
-#comments .slide {
+#comments .comment {
 	width: 43.9rem;
-	height: auto;
+	height: 45.1rem;
 	background-color: white;
+	border-radius: 20px;
 	background-image: url("images/comments-background.png");
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: center;
-	padding: 20px;
-	border-radius: 20px;
-	margin: 0 5px;
+	padding: 0 30px;
+	box-shadow: 10px 0 0 0 rgba(255, 255, 255, 0.6);
+	margin-right: 20px;
 }
 
-#comments .slide:last-child {
+#comments .comment:last-child {
+	margin-right: 0;
+}
+
+#comments .desc {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	top: -30px;
+}
+
+#comments .comment:last-child {
 	margin: 0;
 }
 
-#comments .slide .text {
-	display: flex;
-	flex-direction: column;
-	/* justify-content: space-evenly; */
-	align-items: center;
-	/* height: 100%; */
-	position: relative;
-	/* top: -66px; */
-	/* gap: 5px; */
+#comments .comment-image {
+	height: 86px;
+    width: 86px;
+    overflow: hidden;
+    border-radius: 100%;
+	margin-bottom: 5px;
 }
 
-#comments img {
-	height: 85px;
-	width: 85px;
-	border: 2px solid white;
-	border-radius: 100%;
-	position: relative;
+#comments .comment-image img {
+	width: 100%;
 }
 
-#comments .name,
-#comments .location {
-	font-family: var(--font-pattern1);
+#comments .name {
+	font-family: var(--font-pattern1);	
 	font-size: 1.8rem;
 	font-weight: bold;
+	text-align: center;
 }
 
 #comments .location {
+	font-family: var(--font-pattern1);	
 	font-size: 1.4rem;
+	font-weight: bold;
+	text-align: center;
 }
 
-#comments .comment {
-	font-family: var(--font-pattern1);
-	font-size: 1.8rem;
-	font-weight: bold;
+#comments p {
+	font-family: var(--font-pattern1);	
+	font-size: 1.6rem;
+	font-weight: 600;
 	color: #746282;
 	margin-top: 20px;
 }
@@ -1074,6 +1125,12 @@ footer .information {
 	text-decoration: underline;
 }
 
+@media (max-width: 1530px) { /* gambiarra moments */
+	#comments .box-sliders {
+		width: 100vw;
+	}	
+}
+
 @media (max-width: 1400px) {
 	html {
 		font-size: 55%;
@@ -1089,6 +1146,11 @@ footer .information {
 
 	#our-mission img {
 		margin: 20px 0;
+	}
+
+	/* #courses h2, 
+	#courses h3 {
+		text-align: center;
 	}
 
 	#courses .box-courses {
@@ -1121,15 +1183,7 @@ footer .information {
 
 	#courses .title {
 		margin-top: 20px;
-	}
-
-	#comments .contents {
-		overflow-x: visible;
-	}
-
-	#comments .box-sliders {
-		width: 100vw;
-	}
+	} */
 
 	.subscribe .text .up {
 		width: 90%;
@@ -1155,6 +1209,19 @@ footer .information {
 		margin-right: 0;
 	}
 
+	/* novo */
+	#benefits {
+		background-image: unset;
+	}
+
+	#benefits .slider1 {
+		width: 100%;
+	}
+
+	#benefits .text {
+		width: 50%;
+	}
+/* 
 	#benefits .flex {
 		flex-direction: column;
 	}
@@ -1191,6 +1258,45 @@ footer .information {
 
 	#benefits a {
 		margin: 20px auto auto auto;
+	} */
+
+	
+
+	#courses h2, 
+	#courses h3 {
+		text-align: center;
+	}
+
+	#courses .box-courses {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#courses .course {
+		height: 584px;
+		margin-bottom: 50px;
+	}
+
+	#courses .course:last-child {
+		margin-bottom: 0;
+	}
+
+	#courses .course-image {
+		position: unset;
+		width: 100% !important;
+	}
+
+	#courses .course-image .image1 {
+		width: 100%;
+		height: 100%;
+	}
+
+	#courses .box-informations {
+		height: 100%;
+	}
+
+	#courses .title {
+		margin-top: 20px;
 	}
 
 	#faq {
@@ -1242,8 +1348,16 @@ footer .information {
 }
 
 @media (max-width: 992px) {
-	#menu-desktop ul.menu li:nth-child(-n+5) {
+	#menu-desktop ul.menu li{
 		display: none;
+	}
+
+	#menu-desktop ul.menu li.list-login {
+		display: block;
+	}
+
+	#menu-desktop ul.menu li.list-menu-toggle {
+		display: block;
 	}
 
 	/* Menu Mobile */
@@ -1288,6 +1402,45 @@ footer .information {
 		margin: 10px;
 	}
 
+	#benefits .flex {
+		flex-direction: column;
+	}
+
+	#benefits .slider1 {
+		width: 100vw;
+		overflow-x: scroll;
+		padding: 20px 0;
+	}
+
+	#benefits .slider2 {
+		transform: translateX(0px) !important;
+	}
+
+	#benefits .group-benefits {
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		gap: 0;
+	}
+
+	.box-benefits {
+		margin: 0 20px;
+	}
+
+	#benefits .slider1 .box-button {
+		display: none;
+	}
+
+	#benefits .text {
+		/* width: 100%; */
+		width: 90%; /* para dar o margin, já que depois de utilizar overfloX:hidden o margin do contents desaparece */
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	#benefits a {
+		margin: 20px auto auto auto;
+	} 
+
 	#about-us .first-section,
 	#about-us .second-section,
 	#about-us .third-section {
@@ -1319,13 +1472,12 @@ footer .information {
 
 	#reasons .r-numeration1::-webkit-scrollbar {
 		/* fundo do scroll */
-		background-color: var(--color-pattern);
 		height: 5px;
 	}
 
 	#reasons .r-numeration1::-webkit-scrollbar-thumb {
 		/* scroll que se movimenta */
-		background-color: var(--color-pattern2);
+		background-color: var(--color-pattern);
 		border-radius: 20px;
 	}
 
@@ -1338,13 +1490,40 @@ footer .information {
 		width: 350px;
 	}
 
-	#comments .slider1 {
-		overflow-x: scroll;
-	}
-
 	#comments .box-button {
 		display: none;
 	}
+
+	#comments .slider1 {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		padding: 20px;
+	}
+
+	#comments .slider1::-webkit-scrollbar {
+		/* fundo do scroll */
+		height: 5px;
+	}
+
+	#comments .slider1::-webkit-scrollbar-thumb {
+		/* scroll que se movimenta */
+		background-color: white;
+		border-radius: 20px;
+	}
+
+	#comments .slider2 {
+		transform: translateX(0%) !important;
+		width: fit-content;
+	}
+
+	/* #comments .comment {
+		margin-right: 20px;
+		height: auto;
+	}
+
+	#comments .comment:last-child {
+		margin-right: 0;
+	} */
 
 	#faq .box-question {
 		width: auto;
@@ -1353,7 +1532,7 @@ footer .information {
 
 @media (max-width: 768px) {
 	#reasons .text {
-		margin: 0;
+		margin: 0 30px;
 	}
 
 	#newsletter .contents {
@@ -1412,6 +1591,11 @@ footer .information {
 		width: 100%;
 	}
 
+	#courses .course {
+		height: 584px;
+		width: 100%;
+	}
+
 	#newsletter .contents {
 		margin: 0;
 	}
@@ -1449,4 +1633,10 @@ Pega o valor padrão da div e tranforma em VW
 Ex: 500px, se a tela for de 1400, faz: 1400/100 = 14 | 500/14 = 35vw
 			  se a tela agora for de 1200, faz: 1200/100 = 12 | 500/12 = 41vw (aumentou como deveria)
 			  se a tela agora for de 80, faz: 80/100 = 8 | 500/8 = 62vw (aumentou como deveria)
+
+
+			
+Sempre colocar o id antes da tag que vou altera, Ex: #Id p
+para que eu sempre saiba de qual lugar vem a tag, se eu quiser apagar tudo vou saber exatamento de onde vem todos
+os elementos, se for globa não precisa usar
 */
