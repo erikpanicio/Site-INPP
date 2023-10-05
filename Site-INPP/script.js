@@ -1,5 +1,3 @@
-/* Menu */
-
 function openMenu() {
     /* Animation */
     let menu_toggle = document.querySelector(".menu-toggle")
@@ -17,11 +15,6 @@ function openMenu() {
     }
 }
 
-/* let link = document.querySelectorAll("#menu-desktop .menu li a")
-link.addEventListener("click", function(){
-    console.log("clicado")
-})
- */
 /* Slider Benefits */
 
 function transitionBenefits(num_benefits) {
@@ -40,21 +33,7 @@ function transitionBenefits(num_benefits) {
 
 /* Slider Comments */
 
-function transitionComments(num_comments) {
-    /* Transition Slider */
-    let slider2_comments = document.querySelector("#comments .slider2")
-    let transition_porcent = num_comments * 33.33
-    slider2_comments.style.transform = `translateX(-${transition_porcent}%)`
-
-    /* Color button */
-    let transition_button = document.querySelectorAll("#comments .box-button button")
-    for(let i = 0; i < 3; i++){
-        transition_button[i].style.backgroundColor = "transparent"
-    }
-    transition_button[num_comments].style.backgroundColor = "white"
-}
-
-/* let slider2_comments = document.querySelector("#comments .slider2")
+let slider2_comments = document.querySelector("#comments .slider2")
 let val = 0
 
 function leftTransitionComments() {
@@ -69,7 +48,7 @@ function rightTransitionComments() {
         val += 11.11
         slider2_comments.style.transform = `translate(-${val}%)`
     }
-} */
+}
 
 
 /* FAQ */
