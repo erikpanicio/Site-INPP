@@ -233,8 +233,9 @@ button.active .line:nth-child(3) {
 
 #banner {
 	height: 221px;
-	background-image: url("images/banner.png");
+	background-image: url("images/banner.svg");
 	background-repeat: no-repeat;
+	background-color: var(--color-pattern);
 	/* background-size: cover; */
 }
 
@@ -304,8 +305,6 @@ p {
 }
 
 #benefits .slider1 {
-	/* width: 100%; */
-	/* width: 50%; */
 	width: 50%;
 	overflow-x: hidden;
 }
@@ -319,7 +318,6 @@ p {
 	/* scroll que se movimenta */
 	background-color: #D9731A;
 }
-
 
 #benefits .slider2 {
 	width: 300%;
@@ -369,7 +367,7 @@ p {
 	text-align: center;
 }
 
-.box-button { /* colocar no lugar certo */
+.box-button {
 	display: flex;
 	justify-content: center;
 	margin: 40px 0;
@@ -392,8 +390,6 @@ p {
 }
 
 #about-us .flex {
-	/* display: flex;
-	justify-content: space-between; */
 	align-items: center;
 }
 
@@ -442,9 +438,6 @@ p {
 	line-height: 25px;
 }
 
-#our-mission {
-}
-
 #our-mission h2,
 #our-mission h3 {
 	text-align: center;
@@ -458,7 +451,6 @@ p {
 
 #our-mission .box {
 	width: 383px;
-	/* height: 130px; */
 	border: 1px solid var(--color-pattern);
 	border-radius: 20px;
 	padding: 20px 15px;
@@ -497,7 +489,6 @@ p {
 }
 
 #courses .course {
-	/* width: 40rem; */
 	width: 44rem;
 	background-color: white;
 	border-radius: 20px;
@@ -522,12 +513,6 @@ p {
 	align-items: end;
 }
 
-#courses .course-image img {
-	/* width: 100% !important; */
-	/* height: 100% !important; */
-	/* height: 255px; */
-}
-
 #courses .course-image .image1 {
 	height: 27.2rem;
 }
@@ -547,13 +532,10 @@ p {
 	justify-content: space-between;
 }
 
-/* 502 272 */
-
 #courses .box-informations a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* width: 363px; */
 	height: 55px;
 	background-color: var(--color-pattern2);
 	border-radius: 10px;
@@ -583,7 +565,6 @@ p {
 #courses .information {
 	display: flex;
 	align-items: center;
-	/* margin: 10px 0; */
 }
 
 #courses .information:last-child {
@@ -625,12 +606,6 @@ p {
 	height: 17px;
 }
 
-#reasons {
-	/* background-image: url("images/reasons-background.png");
-	background-repeat: no-repeat;
-	background-size: cover; */
-}
-
 #reasons .text {
 	text-align: center;
 	margin: 0 150px;
@@ -642,10 +617,6 @@ p {
 	margin: auto;
 	margin-top: 35px;
 }
-
-/* #reasons .button:hover {
-	
-} */
 
 #reasons .r-numeration1 {}
 
@@ -713,22 +684,8 @@ p {
 }
 
 #comments .box-sliders {
-	/* display: flex; */
-	/* width: 100vw; */
 	width: 100%;
 }
-
-/* 
-Button antigo
-#comments .box-button {
-	display: flex;
-	align-items: center;
-}
-
-#comments .box-button button {
-	height: 4.2rem;
-	width: 4.2rem;
-} */
 
 #comments .box-button button {
 	border: 1px solid white;
@@ -814,7 +771,6 @@ Button antigo
 #comments .location {
 	font-family: var(--font-pattern1);	
 	font-size: 1.4rem;
-	font-weight: bold;
 	text-align: center;
 }
 
@@ -910,75 +866,9 @@ Button antigo
 
 #faq .box-answer.active {
 	overflow: visible;
-	/* height: 120px; */
 	height: auto;
 	transition: height 0.5s;
 }
-
-
-/* FAQ com Details */
-
-/* #faq {
-	background-image: url("images/faq-background.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-}
-
-#faq .group-questions {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-}
-
-#faq details {
-	width: 668px;
-	margin-bottom: 30px;
-}
-
-#faq details:last-child {
-	margin: 0px;
-}
-
-#faq summary {
-    list-style-type: '+ ';
-	border: 1px solid transparent;
-	padding: 10px 0;
-	background-image: url("images/faq-duvida.png");
-	background-repeat: no-repeat;
-	background-size: 40px;
-	background-position: right;
-}
-
-#faq summary::marker {
-	font-size: 30px;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	vertical-align: middle;
-}
-
-#faq details[open] summary {
-    list-style-type: '- ';
-	border: 1px solid black;
-	box-shadow: -4px 3px 0 0 black;
-	background-color: var(--color-pattern);
-}
-
-#faq p {
-	padding: 10px;
-	border: 1px solid black;
-	box-shadow: -4px 3px 0 0 black;
-	background-color: var(--color-pattern);
-
-}
-
-#faq summary {
-	font-family: var(--font-pattern2);
-	font-size: 1.8rem;
-	font-weight: bold;
-} */
 
 #newsletter .subscribe {
 	border-radius: 20px;
@@ -1102,7 +992,6 @@ footer .information {
 	margin: 20px 0;
 }
 
-
 .name {
 	font-weight: bold;
 }
@@ -1148,43 +1037,6 @@ footer .information {
 		margin: 20px 0;
 	}
 
-	/* #courses h2, 
-	#courses h3 {
-		text-align: center;
-	}
-
-	#courses .box-courses {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	#courses .course {
-		height: 584px;
-		margin-bottom: 50px;
-	}
-
-	#courses .course:last-child {
-		margin-bottom: 0;
-	}
-
-	#courses .course-image {
-		position: unset;
-		width: 100% !important;
-	}
-
-	#courses .course-image .image1 {
-		width: 100%;
-		height: 100%;
-	}
-
-	#courses .box-informations {
-		height: 100%;
-	}
-
-	#courses .title {
-		margin-top: 20px;
-	} */
-
 	.subscribe .text .up {
 		width: 90%;
 	}
@@ -1193,7 +1045,6 @@ footer .information {
 		display: flex;
 		justify-content: center;
 	}
-
 }
 
 @media (max-width: 1200px) {
@@ -1209,7 +1060,6 @@ footer .information {
 		margin-right: 0;
 	}
 
-	/* novo */
 	#benefits {
 		background-image: unset;
 	}
@@ -1221,46 +1071,6 @@ footer .information {
 	#benefits .text {
 		width: 50%;
 	}
-/* 
-	#benefits .flex {
-		flex-direction: column;
-	}
-
-	#benefits .slider1 {
-		width: 100vw;
-		overflow-x: scroll;
-		padding: 20px 0;
-	}
-
-	#benefits .slider2 {
-		transform: translateX(0px) !important;
-	}
-
-	#benefits .group-benefits {
-		flex-wrap: nowrap;
-		justify-content: space-around;
-		gap: 0;
-	}
-
-	.box-benefits {
-		margin-right: 20px;
-	}
-
-	#benefits .slider1 .box-button {
-		display: none;
-	}
-
-	#benefits .text {
-		width: 100%;
-		text-align: center;
-		margin-bottom: 30px;
-	}
-
-	#benefits a {
-		margin: 20px auto auto auto;
-	} */
-
-	
 
 	#courses h2, 
 	#courses h3 {
@@ -1393,7 +1203,6 @@ footer .information {
 	}
 
 	#banner .flex {
-		/* display: block; */
 		flex-wrap: wrap;
 		justify-content: center;
 	}
@@ -1431,7 +1240,6 @@ footer .information {
 	}
 
 	#benefits .text {
-		/* width: 100%; */
 		width: 90%; /* para dar o margin, já que depois de utilizar overfloX:hidden o margin do contents desaparece */
 		text-align: center;
 		margin-bottom: 30px;
@@ -1516,15 +1324,6 @@ footer .information {
 		width: fit-content;
 	}
 
-	/* #comments .comment {
-		margin-right: 20px;
-		height: auto;
-	}
-
-	#comments .comment:last-child {
-		margin-right: 0;
-	} */
-
 	#faq .box-question {
 		width: auto;
 	}
@@ -1556,10 +1355,6 @@ footer .information {
 }
 
 @media (max-width: 576px) {
-	/* html {
-		font-size: 35%;
-	} */
-
 	#banner .flex {
 		display: block;
 	}
