@@ -1,12 +1,13 @@
-/* Menu */
+/* Menu Mobile*/
+
+let menu_mobile = document.querySelector("#menu-mobile")
+let menu_toggle = document.querySelector(".menu-toggle")
 
 function openMenu() {
     /* Animation */
-    let menu_toggle = document.querySelector(".menu-toggle")
     menu_toggle.classList.toggle("active")
     
     /* Open and Close Menu */
-    let menu_mobile = document.querySelector("#menu-mobile")
     if (menu_toggle.classList.contains("active") == true) {
         menu_mobile.style.display = "flex"
         document.body.style.overflow = "hidden"
@@ -17,11 +18,16 @@ function openMenu() {
     }
 }
 
-/* let link = document.querySelectorAll("#menu-desktop .menu li a")
-link.addEventListener("click", function(){
-    console.log("clicado")
-})
- */
+let link = document.querySelectorAll("#menu-mobile .menu li a")
+for(let i = 0; i < link.length; i++){ /* Se algum botão for clicado fechar menu e tirar o overflow */
+    link[i].addEventListener("click", function(){
+        menu_toggle.classList.remove("active") /* Volta a animação para o padrão */
+
+        menu_mobile.style.display = "none"
+        document.body.style.overflow = "unset"
+    })
+}
+
 /* Slider Benefits */
 
 function transitionBenefits(num_benefits) {
@@ -53,24 +59,6 @@ function transitionComments(num_comments) {
     }
     transition_button[num_comments].style.backgroundColor = "white"
 }
-
-/* let slider2_comments = document.querySelector("#comments .slider2")
-let val = 0
-
-function leftTransitionComments() {
-    if(val > 0) {
-        val -= 11.11
-        slider2_comments.style.transform = `translate(-${val}%)`
-    }
-}
-
-function rightTransitionComments() {
-    if(val < 66.66) {
-        val += 11.11
-        slider2_comments.style.transform = `translate(-${val}%)`
-    }
-} */
-
 
 /* FAQ */
 function openAnswer(num_faq) {
