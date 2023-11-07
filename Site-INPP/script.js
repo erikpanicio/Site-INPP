@@ -4,18 +4,24 @@ let menu_mobile = document.querySelector("#menu-mobile")
 let menu_toggle = document.querySelector(".menu-toggle")
 
 function openMenu(){
+    let menu_desktop = document.querySelector("#menu-desktop")
     /* Animation */
     menu_toggle.classList.toggle("active")
     
     /* Open and Close Menu */
     if (menu_toggle.classList.contains("active") == true) {
+        /* menu_desktop.style.position = "fixed" */ /* voltar o menu-desktop */
+
         menu_mobile.style.display = "flex"
         document.body.style.overflow = "hidden"
     }
     else {
+        /* menu_desktop.style.position = "sticky" */ /* voltar o menu-desktop */
+
         menu_mobile.style.display = "none"
         document.body.style.overflow = "unset"
     }
+    
 }
 
 let link = document.querySelectorAll("#menu-mobile .menu li a")
@@ -139,6 +145,7 @@ function openAnswer(num_faq){
     else {
         box_answer.style.height = `0px`
     }
+}
 
 /*
 let box_question = document.querySelectorAll("#faq .box-question")
@@ -149,13 +156,40 @@ let box_question = document.querySelectorAll("#faq .box-question")
 
             let box_answer = document.querySelectorAll("#faq .box-answer")[num]
             let answer_height = document.querySelectorAll("#faq .answer")[num].clientHeight
-            if (box_question[num].classList.contains("active") == true) {
-                box_answer.style.height = `${answer_height}px`
-            }
-            else {
-                box_answer.style.height = `0px`
-            }
+          
         })
     }) 
 */
-}
+
+/* News */
+
+/* let news_p = document.querySelectorAll(".box-news .text p");
+
+for (let i = 0; i < news_p.length; i++) {
+    if (news_p[i].clientHeight > 120) {
+
+        news_p[i].style.height = "50px";
+        news_p[i].style.overflow = "hidden";
+
+        let read_more = document.createElement("a");
+        read_more.innerHTML = "<strong>Ver mais</strong>";
+        
+        let box_news = news_p[i].closest(".box-news .text");
+        box_news.appendChild(read_more);
+
+        read_more.addEventListener("click", function () {
+            news_p[i].classList.toggle("open");
+
+            if (news_p[i].classList.contains("open")) {
+                read_more.innerHTML = "<strong>Ver menos</strong>";
+                news_p[i].style.height = "15vw";
+                news_p[i].style.overflow = "unset";
+            } 
+            else {
+                read_more.innerHTML = "<strong>Ver mais</strong>";
+                news_p[i].style.height = "50px";
+                news_p[i].style.overflow = "hidden";
+            }
+        });
+    }
+} */
